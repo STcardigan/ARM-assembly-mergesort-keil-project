@@ -1,0 +1,10 @@
+--cpu Cortex-M3
+".\objects\core_cm3_constant.o"
+".\objects\main.o"
+".\objects\startup_stm32l1xx_md.o"
+".\objects\stm32l1xx_constants.o"
+".\objects\stm32l1xx_tim_constants.o"
+--strict --scatter ".\Objects\mergeSort.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\mergeSort.map" -o .\Objects\mergeSort.axf
